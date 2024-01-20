@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temperature.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+   <div class="container">
+    <h1> TEMPERATURE CONVERTER</h1>
+    
+    <form id="tempCalc" onsubmit="calculatetemp(); return false">
+        <br/>
+        <select name="fromTemp" id="fromTemp">
+            <option value="celsius" >Celsius</option>
+            <option value="fehrenheit" >Fahrenheit</option>
+            <option value="kel" >kelivin</option>
+        </select> <i class="fa-solid fa-arrow-right fa-xl"></i>
+        <select name="toTemp" id="toTemp">
+            <option value="celsius1" >Celsius</option>
+            <option value="fehrenheit1" >Fahrenheit</option>
+            <option value="kel1" >kelvin</option>
+        </select><br/>
+
+        <label for="temp"> Enter the value of Temperature</label><br/>
+        <input type="number" name="temp" id="temp">
+        <br/>
+
+        <h1 id="resultContainer"></h1> <br/>
+
+        <input type="submit" name="temp"> <br/>   
+    </form>
+   </div> 
+   <script src="temperature.js"></script>
+</body>
+</html>
